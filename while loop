@@ -1,0 +1,8 @@
+#creating while loop
+c = 1#given value of c
+while c <11:#c value less than 11
+    print(c, 'My Computer World')#print the following statement
+    if c == 3:#if c is equal to 3 
+        print("c value is 3 now")#another messege comes after 3 times
+        break#after 3 times stops
+    c = c+1#icreasing c value eact time by 1
