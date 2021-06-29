@@ -1,0 +1,18 @@
+#creating Nested Loop
+print(" Exam Results")
+marks = 96#marks got 96
+if marks == 35:#if marks are equal to 35
+    print("You are promoted! Marks: ", marks)#give a messege as mentioned
+elif marks > 35:# if the marks are greater that 35
+    print("You passed the Exam!")# give a messege as mentioned
+    if marks >= 75 and marks <= 85:#if the marks are between 75 and 85
+        print("You got Good Marks: ", marks)#print messege as mentioned
+    elif marks > 85 and marks <= 95:#if the marks between 85 and 95
+        print("You got Great Marks: ", marks)#print messege as mentoned
+    elif marks > 95:#if the marks are greater than 95
+        print("You are the Best! Marks: ", marks)#print messege as mentiones
+    else:
+        print("Better luck next time! Marks: ", marks)#if the marks are less than 85
+        
+else:
+    print("You failed! Marks: ",marks)#if the marks less than 35
