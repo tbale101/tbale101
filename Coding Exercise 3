@@ -1,0 +1,108 @@
+#Author's Name, Quiz Name, Introduction
+print('''Author Name : Bale,
+"Quizzare"
+Version : 1.0, © 2021. All rights reserved.''')
+#About the Game
+print('''This is a program for the demo of a multiple-choice Quiz,
+which will be presented at an event.
+The aim is to make it interactive and user-friendly.''')
+#Uner Name
+username = input("Username?: ")
+#Welcoming User
+print("Welcome to the world of Quizzare",username)
+#Explaining about the Game amd Rules
+print("""\n"Quizzare" is a multiple-choice quiz that is fully interactive.
+To beat the game, you'll have to answer a series of questions correctly.
+So your aim should be to score as many points as possible.
+There's no timer, so take your time answering the questions.
+The rules of "Quizzare" are simple:
+Once a question is posted, you'll be given three options: a, b and c.
+Use your judgement to select the correct answer. That means you can only choose a, b or c.
+When entering your answer, ensure that you use a lowercase letter.
+Take the following example:
+Q1. Kilimanjaro, a mountain with three volcanic cones, is 5,895 m high.
+Where is this impressive mountain located?
+a. China
+b. Tanzania
+c. Brazil
+If you feel c is the correct answer, when prompted, enter simply the letter c.""")
+user_input=input('\nAre you happy to play the game with those rules? ');
+if user_input == "y":
+while True :
+# Give A Coice to User how many rounds to choose
+number = input("How many rounds would you like to play? [3 or 5]")
+if number == "3" or number == "5" :
+return number
+elif (type(number) == int or float) :
+print("Please enter a value of 3 or 5 rounds")
+else :
+# Invalid Response, Retry
+    print("Please enter a numeric response")
+# Defining Score variables
+x = 0
+score = x# Question One
+print("What is the value of 1 + 1")
+answer_1 = input("a)1\nb)2\nc)3\n:")
+if answer_1.lower() == "b" or answer_1.lower() == "2":
+    print("Congtarts",username, "You got 10 points!")
+x = x + 10
+else:
+    print("Aww, what a shame. That wasn't the correct answer. You got 0 Points.")
+# Question Two
+print("Who is the 45th president of the United States?")
+answer_2 = input("a)Barack Obama\nb)Hillary Clinton\nc)Donald Trump\n:")
+if answer_2.lower() == "c" or answer_2.lower() == "donald trump":
+    print("Congtarts", username, "You got 10 points!")
+x = x + 10
+else:
+    print("Aww, what a shame. That wasn't the correct answer. You got 0 Points.")
+# Question Three
+print("What color are bananas?")
+answer_3 = input("a) Red\nb)Green\nc)Yellow\n:")
+if answer_3.lower() == "c" or answer_3.lower() == "Yellow":
+    print("Congtarts", username, "You got 10 points!")
+x = x + 10
+else:
+    print("Aww, what a shame. That wasn't the correct answer. You got 0 Points.")
+# Question Four
+print("What was the last year the Toronto Maple Leafs won the Stanley Cup?")
+answer_4 = input("a)1967\nb)1955\nc)1987\n:")
+if answer_4.lower() == "a" or answer_4 == "1967":
+    print("Congtarts", username, "You got 10 points!")
+n = x + 10
+else:
+    print("Aww, what a shame. That wasn't the correct answer. You got 0 Points.")
+# Question Five
+print("What color are apples?")
+answer_5 = input("a)Red\nb)Green\nc)Orange\n:")
+if answer_5.lower() == "a" or answer_5.lower() == "Red":
+    print("Congtarts", username, "You got 10 points!")
+x = x + 10
+else:
+    print("Aww, what a shame. That wasn't the correct answer. You got 0 Points.")
+# Question six
+print("What is the value of 2 * 2")
+answer_1 = input("a)2\nb)4\nc)6\n:")if answer_1.lower() == "b" or answer_1.lower() == "4":
+    print("Congtarts",username, "You got 10 points!")
+x = x + 10
+else:
+    print("Aww, what a shame. That wasn't the correct answer. You got 0 Points.")
+# Question Seven
+print("What is the value of 10 / 5")
+answer_1 = input("a)1\nb)2\nc)3\n:")
+if answer_1.lower() == "b" or answer_1.lower() == "2":
+    print("Congtarts",username, "You got 10 points!")
+x = x + 10
+else:
+    print("Aww, what a shame. That wasn't the correct answer. You got 0 Points.")
+# Question Eight
+print("What is the valu of 1250 - 250")
+answer_1 = input("a)1125\nb)1000\nc)1050\n:")
+if answer_1.lower() == "b" or answer_1.lower() == "1000":
+    print("Congtarts",username, "You got 10 points!")
+x = x + 10
+else:
+    print("Aww, what a shame. That wasn't the correct answer. You got 0 Points.")
+#Total Score
+score = float(x / 8)
+print("You got",x,"out of", 8,"Questions"
