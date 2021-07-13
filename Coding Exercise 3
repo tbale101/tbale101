@@ -105,4 +105,4 @@ else:
     print("Aww, what a shame. That wasn't the correct answer. You got 0 Points.")
 #Total Score
 score = float(x / 8)
-print("You got",x,"out of", 8,"Questions"
+print("You got",x,"out of", 8,"Questions")
