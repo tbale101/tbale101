@@ -1,0 +1,9 @@
+number1=float(input("Enter first number: "))
+number2=float(input("Enter second number: "))
+def division(a,b):
+    div=a/b
+    return div
+    print("Result is: ",division(number1,number2))
+    
+if number2 == 0:
+    print("Error-you cannot divide by 0. Please choose an appropriate denominator")
